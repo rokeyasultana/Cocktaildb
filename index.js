@@ -17,7 +17,7 @@ const displaySearchResult = drinks => {
         div.classList.add('col');
         div.innerHTML= `
         <div onclick="loadCocktailDetail(${drink.idDrink})" class = "card">
-            <img src="${ drink.strDrinkThumb}" class="card-img-top" alt="...">
+            <img src="${ drink.strDrinkThumb} " class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${drink.strDrink}</h5>
               <p class="card-text">${drink.strInstructions}</p>

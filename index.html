@@ -10,23 +10,48 @@
 
 </head>
 <body class="bg-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-danger fs-2 fst-italic">
+        <div class="container-fluid text-danger fs-2 fst-italic">
+          <a class="navbar-brand text-danger fs-2 fst-italic" href="#">The CocktailDB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-danger fs-2 fst-italic" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger fs-2 fst-italic" href="#">API</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-danger fs-2 fst-italic" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
     <h1 class="text-center text-danger shadow-sm  fst-italic mt-5">Welcome to The CocktailDB</h1>
 
     <!-- Search -->
-    <div class="input-group mb-3 w-50  mx-auto">
+    <div class="input-group mb-3 w-50 mt-2  mx-auto">
         <input id="search-field" type="text" class="form-control" placeholder="Search for a Cocktail..."
             aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button onclick="searchFood()" class="btn btn-outline-secondary text-danger fst-italic " type="button"
+        <button onclick="searchFood()" class="btn btn-outline-secondary text-danger fs-2 fst-italic  " type="button"
             id="button-search">search</button>
     </div>
 
     <!-- single cocktail details -->
     <div id=" cocktail-details">
-      
+ 
     </div>
 
     <!-- search result -->
-    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+    <div  id="search-result" class="row row-cols-1 row-cols-md-3 g-4 ">
         
       </div>
 
